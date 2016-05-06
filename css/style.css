@@ -7,27 +7,21 @@ body {
     font-family: 'Open Sans Condensed', sans-serif;
     width: 100%;
 }
-.clearfix:after {
+
+.clearfix:after { /*эта штука не дает соседним фоткам залазить на текст */
     content: '';
     display: table;
     clear: both;
 }
-h1 {
-    font-size: 3.5em;
-    text-align: center;
-    font-weight: 300;
-}
-p.leadin {
-    font-size: 2em;
-    text-align: center;
-}
+
 h2 {
     font-weight: 300;
     font-size: 3em;
     text-align: center;
     margin-bottom: 1em;
 }
-/*шапка сайта: лого и меню*/
+
+/*LOGO & NAVIGATION*/
 
 header.top {
     height: 100px;
@@ -35,36 +29,40 @@ header.top {
     position: relative;
 }
 
-.logo {
+.logo { /*при уменьшении размера экрана пропадает часть лого. было бы круто это пофиксить*/
     margin-left: 20px;
     width: 25%;
     height: 100px;
     background: url(../img/generation%20fe-2.png) no-repeat;
     float: left;
 }
-ul.menu li {
-    float: right;
+
+ul.nav li {
     display: inline-block;
+    float: right;
     margin: 35px 20px;
 }
-ul.menu li a {
+
+ul.nav li a {
     height: 60px;
     padding: 10px;
-    background-color: rgba(0, 198, 24,.7);
-    border: 1px solid #008110;
+    background-color: rgba(36, 145, 209,.7);/* цвет кнопок меню с прозрачностью. предлагайте ваши варианты*/
+    border: 1px solid rgb(210,229,240);
     border-radius: 5px;
-    font-weight: 300;
+    font-weight: 100;
     font-size: 20px;
-    color: #008110;
+    color: rgb(210,229,240);
     list-style: none;
     text-decoration: none;
     vertical-align: baseline;
 }
-ul.menu li a:hover {
-    background-color: #008110;
+
+ul.nav li a:hover {
+    background-color: rgb(12, 126, 193);
     color: white;
 }
-header:after {
+
+header:after { /* этот блок добавляет тень под главным меню*/
     content: '';
     width: 100%;
     height: 8px;
@@ -77,31 +75,40 @@ header:after {
 
 /*WELCOME*/
 
-#welcome {
-    width: 100%;
+#welcome { /*в этом блоке настраиваем подложку для первой секции*/
     height: 500px;
     background-image: url(../img/puzzle-1.jpg);
     background-size: cover;
     border-top: 2px solid lightgrey;
 }
-.intro {
+
+.intro { /*в этом блоке настраиваем приветственное сообщение в центре экрана*/
     width: 50%;
     margin: 150px auto;
     padding: 30px;
-    background-color: rgba(0, 198, 24,.9);
+    background-color: rgba(0, 198, 24,.9);/*зеленый цвет нужно поменять на что-то другое*/
     color: white;
     border-radius: 15px;
     background-image: url(../img/slashes.png);
 }
-.intro h1 {
+
+.intro h1 { /* текст "ПРИВЕТ"*/
+    font-size: 3.5em;
+    text-align: center;
+    font-weight: 300;
     margin-top: -15px;
     margin-bottom: 10px;
 }
 
+p.leadin { /* текст "вы попали на страницу..."*/
+    font-size: 2em;
+    text-align: center;
+}
+
+
 /*OUR TEAM*/
 
-#our-team {
-    
+#our-team { /*этот блок делает градиент фоном*/
     height: 1650px;
     background-image: -webkit-linear-gradient(left, lightblue, white);/*тут лажа с цветом. предлагайте*/
     background-image: -moz-linear-gradient(left, lightblue, white);
@@ -110,7 +117,8 @@ header:after {
     background-size: cover;
     padding: 2%;
 }
-.photo {
+
+.photo { /*здесь прижимаем фото к левому краю экрана и делаем отступ от текста справа*/
     float: left;
     margin-right: 50px;
 }
@@ -123,6 +131,9 @@ header:after {
     background-image: url(../img/section-3.jpg);
     background-size: cover;
 }
+
+/*FOOTER*/
+
 footer {
     padding: 20px;
     height: 100px;
