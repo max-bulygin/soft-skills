@@ -3,19 +3,29 @@
     margin: 0;
 }
 body {
+    font-size: 18px;
     font-family: 'Open Sans Condensed', sans-serif;
     width: 100%;
 }
-clearfix:after {
+.clearfix:after {
     content: '';
     display: table;
     clear: both;
 }
-h1,
-h2,
-h3 {
+h1 {
+    font-size: 3.5em;
     text-align: center;
     font-weight: 300;
+}
+p.leadin {
+    font-size: 2em;
+    text-align: center;
+}
+h2 {
+    font-weight: 300;
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 1em;
 }
 /*шапка сайта: лого и меню*/
 
@@ -65,8 +75,9 @@ header:after {
     background: url(../img/header_shadow.png) repeat-x center top;
 }
 
-/*первая секция*/
-#section1 {
+/*WELCOME*/
+
+#welcome {
     width: 100%;
     height: 500px;
     background-image: url(../img/puzzle-1.jpg);
@@ -82,25 +93,32 @@ header:after {
     border-radius: 15px;
     background-image: url(../img/slashes.png);
 }
-.intro h1,
-.intro h2 {
-    margin-bottom: 15px;
+.intro h1 {
+    margin-top: -15px;
+    margin-bottom: 10px;
 }
-.intro p {
-    text-align: justify;
-    margin-top: 15px;
-}
+
+/*OUR TEAM*/
+
 #our-team {
-    width: 100%;
-    height: 600px;
+    
+    height: 1650px;
     background-image: -webkit-linear-gradient(left, lightblue, white);/*тут лажа с цветом. предлагайте*/
     background-image: -moz-linear-gradient(left, lightblue, white);
     background-image: -o-linear-gradient(left, lightblue, white);
     background-image: linear-gradient(left, lightblue, white);
     background-size: cover;
+    padding: 2%;
 }
+.photo {
+    float: left;
+    margin-right: 50px;
+}
+
+/*GOALS*/
+
 #goals {
-    width: 100%;
+    padding: 2%;
     height: 1200px;
     background-image: url(../img/section-3.jpg);
     background-size: cover;
