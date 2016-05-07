@@ -108,22 +108,83 @@ p.leadin { /* текст "вы попали на страницу..."*/
 
 /*OUR TEAM*/
 
-#our-team { /*этот блок делает градиент фоном*/
+#our-team {
     height: 1650px;
-    background-image: -webkit-linear-gradient(left, lightblue, white);/*тут лажа с цветом. предлагайте*/
-    background-image: -moz-linear-gradient(left, lightblue, white);
-    background-image: -o-linear-gradient(left, lightblue, white);
-    background-image: linear-gradient(left, lightblue, white);
-    background-size: cover;
-    padding: 2%;
+    padding: 2% 5%;
 }
 
 .photo { /*здесь прижимаем фото к левому краю экрана и делаем отступ от текста справа*/
     float: left;
     margin-right: 50px;
 }
-.description li{
+
+.strengths li {
     list-style-type: circle;
+}
+
+.strengths:before {
+    content: 'Сильные стороны: ';
+    font-style: italic;
+    font-weight: bolder;
+    color: rgb(203, 0, 109);
+}
+
+.profit:before {
+    content: 'Чем полезен команде: ';
+    font-style: italic;
+    font-weight: bolder;
+    color: rgb(203, 0, 109);
+}
+
+.profit-f:before {
+    content: 'Чем полезна команде: ';
+    font-style: italic;
+    font-weight: bolder;
+    color: rgb(203, 0, 109);
+}
+
+h3 {
+    font-weight: 300;
+    font-size: 2em;
+    border-bottom: 4px solid black;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.max h3 {
+    border-bottom: 4px solid #60bf06;
+    color: #60bf06;
+    text-shadow: 1px 1px lightgrey;
+}
+
+.maria h3 {
+    border-bottom: 4px solid #339ec1;
+    color: #339ec1;
+    text-shadow: 1px 1px lightgrey;
+}
+
+.yuriy h3 {
+    border-bottom: 4px solid #c8031a;
+    color: #c8031a;
+    text-shadow: 1px 1px lightgrey;
+}
+
+.natalia h3 {
+    border-bottom: 4px solid #f4ed2c;
+    color: #f4ed2c;
+    text-shadow: 1px 1px lightgrey;
+}
+
+.alex h3 {
+    border-bottom: 4px solid #9fc2df;
+    color: #9fc2df;
+    text-shadow: 1px 1px lightgrey;
+}
+
+.sergey h3 {
+    border-bottom: 4px solid #ff5722;
+    color: #ff5722;
+    text-shadow: 1px 1px lightgrey;
 }
 
 /*GOALS*/
