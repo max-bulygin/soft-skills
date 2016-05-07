@@ -108,21 +108,18 @@ p.leadin { /* текст "вы попали на страницу..."*/
 
 /*OUR TEAM*/
 
-#our-team { /*этот блок делает градиент фоном*/
+#our-team {
     height: 1650px;
-/*
-    background-image: -webkit-linear-gradient(left, lightblue, white);тут лажа с цветом. предлагайте
-    background-image: -moz-linear-gradient(left, lightblue, white);
-    background-image: -o-linear-gradient(left, lightblue, white);
-    background-image: linear-gradient(left, lightblue, white);
-    background-size: cover;
-*/
     padding: 2% 5%;
 }
 
 .photo { /*здесь прижимаем фото к левому краю экрана и делаем отступ от текста справа*/
     float: left;
     margin-right: 50px;
+}
+
+.strengths li {
+    list-style-type: circle;
 }
 
 .strengths:before {
@@ -134,6 +131,13 @@ p.leadin { /* текст "вы попали на страницу..."*/
 
 .profit:before {
     content: 'Чем полезен команде: ';
+    font-style: italic;
+    font-weight: bolder;
+    color: rgb(203, 0, 109);
+}
+
+.profit-f:before {
+    content: 'Чем полезна команде: ';
     font-style: italic;
     font-weight: bolder;
     color: rgb(203, 0, 109);
@@ -171,15 +175,15 @@ h3 {
     text-shadow: 1px 1px lightgrey;
 }
 
-.sergey h3 {
-    border-bottom: 4px solid #ff5722;
-    color: #ff5722;
-    text-shadow: 1px 1px lightgrey;
-}
-
 .alex h3 {
     border-bottom: 4px solid #9fc2df;
     color: #9fc2df;
+    text-shadow: 1px 1px lightgrey;
+}
+
+.sergey h3 {
+    border-bottom: 4px solid #ff5722;
+    color: #ff5722;
     text-shadow: 1px 1px lightgrey;
 }
 
