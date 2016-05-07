@@ -122,6 +122,9 @@ p.leadin { /* текст "вы попали на страницу..."*/
     float: left;
     margin-right: 50px;
 }
+.description li{
+    list-style-type: circle;
+}
 
 /*GOALS*/
 
