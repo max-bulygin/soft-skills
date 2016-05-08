@@ -199,7 +199,7 @@ h3 {
 img.our-goals {
     position: absolute;
     top: 310px;
-    left: 600px;
+    left: 360px;
     display: block;
     margin: 0 auto;
 }
@@ -240,7 +240,7 @@ img.shadow {
 #first_goals2 p,
 #first_goals3 p,
 #first_goals4 p {
-    font-size: 40px;
+    font-size: 30px;
 }
 
 /*FOOTER*/
