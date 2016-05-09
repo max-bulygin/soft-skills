@@ -19,6 +19,7 @@ h2 {
     font-size: 3em;
     text-align: center;
     margin-bottom: 1em;
+    color: #0A6786;
 }
 
 /*LOGO & NAVIGATION*/
@@ -73,6 +74,17 @@ header:after { /* этот блок добавляет тень под глав�
     background: url(../img/header_shadow.png) repeat-x center top;
 }
 
+footer:before {
+    content: '';
+    width: 100%;
+    height: 8px;
+    top: -8px;
+    left: 0;
+    position: absolute;
+    z-index: 100;
+    background: url(../img/footer_shadow.png) repeat-x center top;
+}
+
 /*WELCOME*/
 
 #welcome { /*в этом блоке настраиваем подложку для первой секции*/
@@ -105,7 +117,16 @@ p.leadin { /* текст "вы попали на страницу..."*/
     text-align: center;
 }
 
-
+p.text {
+    font-size: 1.3em;
+    text-align: center;
+    margin-top: 20px;
+}
+.text a {
+    color: white;
+    text-decoration: none;
+    border-bottom: 2px dotted white;
+}
 /*OUR TEAM*/
 
 #our-team {
@@ -274,4 +295,11 @@ footer {
     padding: 20px;
     height: 100px;
     background-image: url(../img/12.png);
+    position: relative;
+}
+.copy {
+    width: 300px;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 1.4em;
 }
