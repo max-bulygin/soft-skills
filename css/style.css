@@ -239,14 +239,14 @@ h3 {
 }
 #first_goals3 {
     position: absolute;
-    top: 700px;
+    top: 750px;
     right: 20px;
     transition: 1s;
     display: table;
 }
 #first_goals4 {
     position: absolute;
-    top: 700px;
+    top: 750px;
     left: 20px;
     transition: 1s;
     display: table;
