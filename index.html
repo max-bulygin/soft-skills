@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ru">
 <head>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
@@ -103,10 +103,10 @@
       <img src="img/our-goals/shadow.png" alt="" class="shadow">
 
       <map id="navigation" name="navigation">
-      <area shape="poly" coords="0, 301, 53, 249, 38, 236, 42, 201, 82, 195, 94, 208, 148, 153, 199, 205, 221, 191, 247, 199, 253, 234, 242, 249, 292, 300, 241, 352, 253, 367, 248, 399, 211, 407, 198, 395, 146, 445, 93, 394, 83, 408, 41, 405, 36, 367, 54, 354, 1, 301" href="#" id="miz" onmouseover="focuss(1)" onmouseout="onfocuss(1)" id="goal_1" alt="1">
-      <area shape="poly" coords="151, 146, 298, 0, 350, 52, 365, 41, 397, 46, 404, 82, 393, 96, 444, 148, 395, 198, 406, 211, 401, 246, 363, 252, 351, 240, 299, 293, 255, 248, 264, 220, 253, 192, 219, 180, 196, 193" href="#" id="miz" onmouseover="focuss(2)" onmouseout="onfocuss(2)" id="goal_2" alt="2">
-      <area shape="poly" coords="453, 155, 505, 206, 522, 192, 552, 199, 559, 236, 549, 249, 599, 300, 550, 352, 565, 373, 559, 401, 519, 410, 506, 395, 454, 448, 410, 402, 420, 370, 407, 345, 376, 334, 351, 346, 307, 299, 350, 255, 377, 267, 406, 258, 419, 221, 408, 197" href="#" id="miz" onmouseover="focuss(3)" onmouseout="onfocuss(3)" id="goal_3" alt="3">
-      <area shape="poly" coords="298, 306, 351, 359, 366, 346, 399, 352, 404, 389, 394, 402, 445, 454, 400, 498, 380, 487, 344, 497, 332, 529, 343, 555, 299, 599, 346, 549, 230, 562, 196, 556, 191, 518, 203, 506, 150, 453, 196, 409, 220, 419, 250, 411, 264, 374, 253, 349" href="#" id="miz" onmouseover="focuss(4)" onmouseout="onfocuss(4)" id="goal_4" alt="4">
+      <area shape="poly" coords="0, 301, 53, 249, 38, 236, 42, 201, 82, 195, 94, 208, 148, 153, 199, 205, 221, 191, 247, 199, 253, 234, 242, 249, 292, 300, 241, 352, 253, 367, 248, 399, 211, 407, 198, 395, 146, 445, 93, 394, 83, 408, 41, 405, 36, 367, 54, 354, 1, 301" href="#"  onmouseover="focuss(1)" onmouseout="onfocuss(1)" id="goal_1" alt="1">
+      <area shape="poly" coords="151, 146, 298, 0, 350, 52, 365, 41, 397, 46, 404, 82, 393, 96, 444, 148, 395, 198, 406, 211, 401, 246, 363, 252, 351, 240, 299, 293, 255, 248, 264, 220, 253, 192, 219, 180, 196, 193" href="#"  onmouseover="focuss(2)" onmouseout="onfocuss(2)" id="goal_2" alt="2">
+      <area shape="poly" coords="453, 155, 505, 206, 522, 192, 552, 199, 559, 236, 549, 249, 599, 300, 550, 352, 565, 373, 559, 401, 519, 410, 506, 395, 454, 448, 410, 402, 420, 370, 407, 345, 376, 334, 351, 346, 307, 299, 350, 255, 377, 267, 406, 258, 419, 221, 408, 197" href="#"  onmouseover="focuss(3)" onmouseout="onfocuss(3)" id="goal_3" alt="3">
+      <area shape="poly" coords="298, 306, 351, 359, 366, 346, 399, 352, 404, 389, 394, 402, 445, 454, 400, 498, 380, 487, 344, 497, 332, 529, 343, 555, 299, 599, 346, 549, 230, 562, 196, 556, 191, 518, 203, 506, 150, 453, 196, 409, 220, 419, 250, 411, 264, 374, 253, 349" href="#"  onmouseover="focuss(4)" onmouseout="onfocuss(4)" id="goal_4" alt="4">
       </map>
 
       <div id="first_goals1">
@@ -124,7 +124,6 @@
       <div id="first_goals4">
         <p>создавать современные сайты и нести иинновационные идеи в массы</p>
       </div>
-
    </div>
    <footer>
        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam quam eligendi ad quis aliquid ipsam accusamus. Autem similique, cupiditate soluta incidunt cumque iusto corporis quod, commodi odio, animi perspiciatis ad.
@@ -132,9 +131,18 @@
    </footer>   
 </body>
 <script>
+    window.onload = function () {
+
+      for(var i = 1; i <= 4; i++){
+        var str = document.getElementById('first_goals' + i);
+        str.style.opacity = 0;
+        
+      }
+    }
+
   function focuss(n) {
       var bl = document.getElementById('first_goals'+n);
-       bl.style.display = 'block';
+       bl.style.opacity = 1;
      if(n<=2){
       bl.style.top = '200px';
       bl.style.transition = '1s';
@@ -146,10 +154,11 @@
   function onfocuss(n){
     var bl = document.getElementById('first_goals'+n);
      if(n<=2){
-      bl.style.display = "none";
+      bl.style.opacity = 0;
       bl.style.top = "150px";
      }else{
-      bl.style.display = "none";
+      
+      bl.style.opacity = 0;
       bl.style.top = "900px";
      }
   }
